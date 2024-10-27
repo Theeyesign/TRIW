@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Las Ruinas De El Perdido</title>
+</head>
+<body>
+    <div id="center-box">
+        <h1>Bienvenido a la Aventura</h1>
+        <h2>Esta es mi historia</h2>
+        <input type="text" id="codeInput" placeholder="Ingresa un código...">
+        <button id="openCardButton">Abrir Carta</button>
+
+        <div id="card" class="hidden">
+            <h2>Carta Abierta</h2>
+            <p id="cardContent"></p>
+            <button id="closeCardButton">Cerrar</button>
+        </div>
+
+        <div id="storySections" class="hidden">
+            <h2>Conoce mi historia</h2>
+            <div id="story1" class="story"></div>
+            <div id="story2" class="story"></div>
+            <div id="story3" class="story"></div>
+            <div id="story4" class="story"></div>
+            <div id="story5" class="story"></div>
+            <div id="story6" class="story"></div>
+            <div id="story7" class="story"></div>
+            <input type="text" id="letterInput" placeholder="Ingresa 7 letras...">
+            <button id="submitLetters">Enviar Letras</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
