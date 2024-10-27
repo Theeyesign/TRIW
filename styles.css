@@ -1,0 +1,46 @@
+body {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    font-family: 'Courier New', Courier, monospace; /* Fuente de estilo antiguo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#center-box {
+    text-align: center;
+    border: 5px solid white; /* Borde blanco */
+    padding: 20px;
+    position: relative;
+}
+
+.hidden {
+    display: none; /* Ocultar elementos */
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 5px black; /* Sombra en el texto */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white; /* Borde blanco en el input */
+    background-color: black; /* Fondo negro en el input */
+    color: white; /* Texto blanco en el input */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white; /* Fondo blanco para los botones */
+    color: black; /* Texto negro en los botones */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey; /* Color de fondo al pasar el mouse */
+}
