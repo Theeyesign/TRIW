@@ -1,46 +1,26 @@
 body {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
+    background-color: black; /* Fondo negro para la atmósfera oscura */
+    color: white; /* Texto blanco para contrastar */
     font-family: 'Courier New', Courier, monospace; /* Fuente de estilo antiguo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
 }
 
 #center-box {
     text-align: center;
-    border: 5px solid white; /* Borde blanco */
-    padding: 20px;
-    position: relative;
+    margin-top: 100px;
 }
 
 .hidden {
-    display: none; /* Ocultar elementos */
+    display: none; /* Oculta elementos cuando es necesario */
 }
 
-h1, h2 {
-    text-shadow: 2px 2px 5px black; /* Sombra en el texto */
-}
-
-input[type="text"] {
+.section {
+    border: 2px solid white; /* Borde blanco para las secciones */
     padding: 10px;
     margin: 10px;
-    border: 2px solid white; /* Borde blanco en el input */
-    background-color: black; /* Fondo negro en el input */
-    color: white; /* Texto blanco en el input */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-button {
-    padding: 10px 20px;
-    background-color: white; /* Fondo blanco para los botones */
-    color: black; /* Texto negro en los botones */
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: grey; /* Color de fondo al pasar el mouse */
+#hiddenContent {
+    margin-top: 20px; /* Espacio superior para el contenido revelado */
 }
