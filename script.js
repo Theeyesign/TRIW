@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("storySections").classList.add("hidden");
     document.getElementById("card").classList.add("hidden");
+    document.getElementById("hiddenContent").classList.add("hidden"); // Ocultar contenido adicional
 });
 
 // Funcionalidad para abrir la carta
@@ -11,8 +12,11 @@ document.getElementById("openCardButton").addEventListener("click", function() {
     const cardContent = document.getElementById("cardContent");
 
     if (codeInput === "Theringiswatching") {
-        // Muestra las secciones de historia
-        document.getElementById("storySections").classList.remove("hidden");
+        // Oculta el contenido de entrada y muestra el contenido adicional
+        document.getElementById("center-box").classList.add("hidden");
+        document.getElementById("hiddenContent").classList.remove("hidden");
+
+        // Mostrar la carta
         cardContent.textContent = "¡Has abierto la carta!";
         card.classList.remove("hidden");
     } else {
@@ -25,3 +29,4 @@ document.getElementById("closeCardButton").addEventListener("click", function() 
     const card = document.getElementById("card");
     card.classList.add("hidden");
 });
+
