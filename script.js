@@ -30,3 +30,11 @@ document.getElementById("closeCardButton").addEventListener("click", function() 
     card.classList.add("hidden");
 });
 
+// Funcionalidad para enviar un código adicional
+document.getElementById("submitCode").addEventListener("click", function() {
+    const additionalCodeInput = document.getElementById("additionalCodeInput").value;
+
+    // Aquí puedes agregar la lógica que necesites para manejar el código adicional
+    alert("Código adicional recibido: " + additionalCodeInput);
+});
+
